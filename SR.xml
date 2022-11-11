@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="Documentation/Schemas/Amplitude.Unity.Runtime.RuntimeModule.xsd">
+	  <RuntimeModule Name="SR" Type="Extension" Version="1.0.0">
+      <Title>Senate Rework</Title>
+      <Description></Description>
+      <Author>Gedeonn</Author>
+      <Homepage>https://discord.gg/stgsBuCX63</Homepage>
+      <PreviewImageFile>ModIcon.png</PreviewImageFile>
+      <ReleaseNotes>1.0.0</ReleaseNotes>
+      <Tags>Maps,Balance,Gameplay</Tags>
+
+
+      <Plugins>
+        <RegistryPlugin>
+				  <FilePath>Registry/Registry.xml</FilePath>
+			  </RegistryPlugin>
+        <!-- GUI -->
+			<DatabasePlugin DataType="Amplitude.Unity.Gui.GuiElement, Assembly-CSharp-firstpass">
+				<ExtraTypes>
+					<ExtraType DataType="Amplitude.Unity.Gui.ExtendedGuiElement, Assembly-CSharp-firstpass" />
+					<ExtraType DataType="LawGuiElement, Assembly-CSharp" />
+				</ExtraTypes>
+				<FilePath>GUI/GUIElements[*].xml</FilePath>
+				<FilePath>GUI/Screens/GUIElements[*].xml</FilePath>
+			</DatabasePlugin>
+
+     	  
+			<DatabasePlugin DataType="LawDefinition, Assembly-CSharp">
+				<FilePath>Simulation/LawDefinitions.xml</FilePath>
+				<FilePath>Simulation/LawDefinitions[*].xml</FilePath>
+			</DatabasePlugin>
+
+      	<!-- Simulation -->
+			<DatabasePlugin DataType="Amplitude.Unity.Simulation.SimulationDescriptor, Assembly-CSharp-firstpass">
+				<FilePath>Simulation/SimulationDescriptors[*].xml</FilePath>
+				<FilePath>Simulation/SimulationDescriptors.xml</FilePath>
+			</DatabasePlugin>
+
+      
+        <!-- Localization -->
+        <LocalizationPlugin DefaultLanguage="russian">
+		    	<Directory>Localization</Directory>
+		    </LocalizationPlugin>
+		  </Plugins>
+	  </RuntimeModule>
+</Datatable>
