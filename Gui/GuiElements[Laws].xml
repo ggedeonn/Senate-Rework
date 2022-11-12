@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Datatable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="../Schemas/Amplitude.Unity.Gui.GuiElement.xsd">
-
- 
-    
+       
+   
 <!-- ################################################################ -->
 <!-- #################### P01: INDUSTRIALIST ######################## -->
 <!-- ################################################################ -->
-
+    <!-- Law 0 -->
     <LawGuiElement Name="LawP01L00">
         <Title>%LawP01L00Title</Title>
         <Description>%LawP01L00Description</Description>
@@ -15,7 +14,6 @@
         </Icons>
         <ShortTitle>%LawP01L00ShortTitle</ShortTitle>
     </LawGuiElement>
-
     <LawGuiElement Name="LawP01L00Republic">
         <Title>%LawP01L00Title</Title>
         <Description>%LawP01L00Description</Description>
@@ -24,7 +22,6 @@
         </Icons>
         <ShortTitle>%LawP01L00ShortTitle</ShortTitle>
     </LawGuiElement>
-
     <LawGuiElement Name="LawP01L00Dictatorship">
         <Title>%LawP01L00Title</Title>
         <Description>%LawP01L00Description</Description>
@@ -33,115 +30,24 @@
         </Icons>
         <ShortTitle>%LawP01L00ShortTitle</ShortTitle>
     </LawGuiElement>
-	
+	<!-- Law 1 -->
     <LawGuiElement Name="LawP01L01">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
+        <Title>%LawP01L07Title</Title>
+        <Description>%LawP01L07Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L04Small" />
         </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP01L07ShortTitle</ShortTitle>
     </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01NoOutposts">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
-    </LawGuiElement>
-
     <LawGuiElement Name="LawP01L01Republic">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
+        <Title>%LawP01L07Title</Title>
+        <Description>%LawP01L07Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L04Small" />
         </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP01L07ShortTitle</ShortTitle>
     </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01Vampirilis">
-        <Title>%LawP01L01VampirilisTitle</Title>
-        <Description>%LawP01L01VampirilisDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01VampirilisShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01TimeLords">
-        <Title>%LawP01L01TimeLordsTitle</Title>
-        <Description>%LawP01L01TimeLordsDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01TimeLordsShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01VampirilisRepublic">
-        <Title>%LawP01L01VampirilisTitle</Title>
-        <Description>%LawP01L01VampirilisDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01VampirilisShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01TimeLordsRepublic">
-        <Title>%LawP01L01TimeLordsTitle</Title>
-        <Description>%LawP01L01TimeLordsDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01TimeLordsShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01NoOutpostsRepublic">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
-    </LawGuiElement>
-
-     <LawGuiElement Name="LawP01L01MajorHisshos">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01RepublicMajorHisshos">
-        <Title>%LawP01L01Title</Title>
-        <Description>%LawP01L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01ShortTitle</ShortTitle>
-    </LawGuiElement>
-    <LawGuiElement Name="LawP01L01UmbralChoir">
-        <Title>%LawP01L01UmbralChoirTitle</Title>
-        <Description>%LawP01L01UmbralChoirDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP01L01UmbralChoirRepublic">
-        <Title>%LawP01L01UmbralChoirTitle</Title>
-        <Description>%LawP01L01UmbralChoirDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
-        </Icons>
-        <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
-    </LawGuiElement>
-
-
+    <!-- Law 2-->
     <LawGuiElement Name="LawP01L02">
         <Title>%LawP01L02Title</Title>
         <Description>%LawP01L02Description</Description>
@@ -150,7 +56,6 @@
         </Icons>
         <ShortTitle>%LawP01L02ShortTitle</ShortTitle>
     </LawGuiElement>
-
     <LawGuiElement Name="LawP01L02Republic">
         <Title>%LawP01L02Title</Title>
         <Description>%LawP01L02Description</Description>
@@ -159,18 +64,25 @@
         </Icons>
         <ShortTitle>%LawP01L02ShortTitle</ShortTitle>
     </LawGuiElement>
-
-
+    <!-- Law 3 -->
     <LawGuiElement Name="LawP01L03">
-        <Title>%LawP01L03Title</Title>
-        <Description>%LawP01L03Description</Description>
+        <Title>%LawP01L04Title</Title>
+        <Description>%LawP01L04Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L03Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L05Small" />
         </Icons>
-        <ShortTitle>%LawP01L03ShortTitle</ShortTitle>
+        <ShortTitle>%LawP01L04ShortTitle</ShortTitle>
     </LawGuiElement>
-
     <LawGuiElement Name="LawP01L03Republic">
+        <Title>%LawP01L04Title</Title>
+        <Description>%LawP01L04Description</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L05Small" />
+        </Icons>
+        <ShortTitle>%LawP01L04ShortTitle</ShortTitle>
+    </LawGuiElement>
+    <!-- Law 4 -->
+    <LawGuiElement Name="LawP01L04">
         <Title>%LawP01L03Title</Title>
         <Description>%LawP01L03Description</Description>
         <Icons>
@@ -178,38 +90,14 @@
         </Icons>
         <ShortTitle>%LawP01L03ShortTitle</ShortTitle>
     </LawGuiElement>
-
-
-    <LawGuiElement Name="LawP01L04">
-        <Title>%LawP01L04Title</Title>
-        <Description>%LawP01L04Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L04Small" />
-        </Icons>
-        <ShortTitle>%LawP01L04ShortTitle</ShortTitle>
-    </LawGuiElement>
-
     <LawGuiElement Name="LawP01L04Republic">
-        <Title>%LawP01L04Title</Title>
-        <Description>%LawP01L04Description</Description>
+        <Title>%LawP01L03Title</Title>
+        <Description>%LawP01L03Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L04Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L03Small" />
         </Icons>
-        <ShortTitle>%LawP01L04ShortTitle</ShortTitle>
+        <ShortTitle>%LawP01L03ShortTitle</ShortTitle>
     </LawGuiElement>
-
-
-    <LawGuiElement Name="LawP01QuestVenetians05">
-        <Title>%LawP01QuestVenetians05Title</Title>
-        <Description>%LawP01QuestVenetians05Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01QuestVenetians05Small" />
-        </Icons>
-        <ShortTitle>%LawP01QuestVenetians05ShortTitle</ShortTitle>
-    </LawGuiElement>
-
-
-
 
 
 
@@ -498,107 +386,107 @@
 <!-- ####################   P04: ECOLOGIST   ######################## -->
 <!-- ################################################################ -->
    <LawGuiElement Name="LawP04L00">
-        <Title>%LawP04L02Title</Title>
-        <Description>%LawP04L02Description</Description>
+        <Title>%LawP04L00Title</Title>
+        <Description>%LawP04L00Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L02Small" />
         </Icons>
-        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L00Republic">
-        <Title>%LawP04L02Title</Title>
-        <Description>%LawP04L02Description</Description>
+        <Title>%LawP04L00Title</Title>
+        <Description>%LawP04L00Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L02Small" />
         </Icons>
-        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L00Dictatorship">
-        <Title>%LawP04L02Title</Title>
-        <Description>%LawP04L02Description</Description>
+        <Title>%LawP04L00Title</Title>
+        <Description>%LawP04L00Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L02Small" />
         </Icons>
-        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L00DictatorshipMajorHisshos">
-        <Title>%LawP04L02Title</Title>
-        <Description>%LawP04L02Description</Description>
+        <Title>%LawP04L00Title</Title>
+        <Description>%LawP04L00Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L02Small" />
         </Icons>
-        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
     </LawGuiElement>
 	<!-- Law 1 -->
     <LawGuiElement Name="LawP04L01">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01Republic">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01Vampirilis">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01VampirilisRepublic">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01TimeLords">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01TimeLordsRepublic">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01MajorHisshos">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01MajorHisshosRepublic">
-       <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+       <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01UmbralChoir">
         <Title>%LawP04L02UmbralChoirTitle</Title>
         <Description>%LawP04L02UmbralChoirDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L01Small" />
         </Icons>
         <ShortTitle>%LawP04L02UmbralChoirShortTitle</ShortTitle>
     </LawGuiElement>
@@ -606,59 +494,59 @@
         <Title>%LawP04L02UmbralChoirTitle</Title>
         <Description>%LawP04L02UmbralChoirDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L01Small" />
         </Icons>
         <ShortTitle>%LawP04L02UmbralChoirShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01NoOutposts">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01NoOutpostsRepublic">
-        <Title>%LawP04L00Title</Title>
-        <Description>%LawP04L00Description</Description>
+        <Title>%LawP04L01Title</Title>
+        <Description>%LawP04L01Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
-        <ShortTitle>%LawP04L00ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
     <!-- Law 2 -->
     <LawGuiElement Name="LawP04L02">
-        <Title>%LawP03L01Title</Title>
-        <Description>%LawP03L01Description</Description>
+        <Title>%LawP04L02Title</Title>
+        <Description>%LawP04L02Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP03L01Small" />
         </Icons>
-        <ShortTitle>%LawP03L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L02Republic">
-        <Title>%LawP03L01Title</Title>
-        <Description>%LawP03L01Description</Description>
+        <Title>%LawP04L02Title</Title>
+        <Description>%LawP04L02Description</Description>
         <Icons>
             <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP03L01Small" />
         </Icons>
-        <ShortTitle>%LawP03L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L02ShortTitle</ShortTitle>
     </LawGuiElement>
     <!-- Law 3 -->
     <LawGuiElement Name="LawP04L03">
-        <Title>%LawP00PopulationCollectionNirisTitle</Title>
-		<Description>%LawP00PopulationCollectionNirisDescription</Description>
+        <Title>%LawP04L03Title</Title>
+		<Description>%LawP04L03Description</Description>
 		<Icons>
 			<Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionNiris" />
 		</Icons>
-		<ShortTitle>%LawP00PopulationCollectionNirisShortTitle</ShortTitle>
+		<ShortTitle>%LawP04L03ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L03Republic">
-        <Title>%LawP00PopulationCollectionNirisTitle</Title>
-		<Description>%LawP00PopulationCollectionNirisDescription</Description>
+        <Title>%LawP04L03Title</Title>
+		<Description>%LawP04L03Description</Description>
 		<Icons>
 			<Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionNiris" />
 		</Icons>
-		<ShortTitle>%LawP00PopulationCollectionNirisShortTitle</ShortTitle>
+		<ShortTitle>%LawP04L03ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L03UmbralChoir">
         <Title>%LawP01L01UmbralChoirTitle</Title>
@@ -678,20 +566,20 @@
     </LawGuiElement>
     <!-- Law 4 -->
     <LawGuiElement Name="LawP04L04">
-        <Title>%LawP00PopulationCollectionSowersTitle</Title>
-        <Description>%LawP00PopulationCollectionSowersDescription</Description>
+        <Title>%LawP04L04Title</Title>
+        <Description>%LawP04L04Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionSowers" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
         </Icons>
-        <ShortTitle>%LawP00PopulationCollectionSowersShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L04ShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L04Republic">
-        <Title>%LawP00PopulationCollectionSowersTitle</Title>
-        <Description>%LawP00PopulationCollectionSowersDescription</Description>
+        <Title>%LawP04L04Title</Title>
+        <Description>%LawP04L04Description</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionSowers" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L00Small" />
         </Icons>
-        <ShortTitle>%LawP00PopulationCollectionSowersShortTitle</ShortTitle>
+        <ShortTitle>%LawP04L04ShortTitle</ShortTitle>
     </LawGuiElement>
 	
 
