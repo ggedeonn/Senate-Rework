@@ -268,7 +268,7 @@
         <Modifier TargetProperty="PopulationGrowthUpkeep"                   Operation="Percent"     Value="-0.2"    Path="../ClassEmpire/ClassColonizedStarSystem"/>
         <Modifier TargetProperty="DemocracyLawsDiversityHasEcologist"       Operation="Addition"    Value="1"       Path="../ClassEmpire"   TooltipHidden="true"/>
     </SimulationDescriptor>
-    <SimulationDescriptor Name="LawEffectP04L00Republic_REWOEK" Type="LawEffect">
+    <SimulationDescriptor Name="LawEffectP04L00Republic_REWORK" Type="LawEffect">
         <Modifier TargetProperty="PopulationBoostCostMultiplier"            Operation="Percent"     Value="-0.5"    Path="../ClassEmpire"   TooltipHidden="false"/>
         <Modifier TargetProperty="PopulationGrowthUpkeep"                   Operation="Percent"     Value="-0.25"   Path="../ClassEmpire/ClassColonizedStarSystem"/>
     </SimulationDescriptor>
@@ -324,7 +324,7 @@
         <Modifier TargetProperty="NetSystemGrowth"                          Operation="Addition"    Value="20"      Path="../ClassEmpire/ClassColonizedStarSystem"/>
         <Modifier TargetProperty="DemocracyLawsDiversityHasIndustrialist"   Operation="Addition"    Value="1"       Path="../ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
-     <SimulationDescriptor Name="LawEffectP04L01NoOutposts" Type="LawEffect">
+     <SimulationDescriptor Name="LawEffectP04L01NoOutpostsRepublic" Type="LawEffect">
         <Modifier TargetProperty="NetSystemGrowth"                          Operation="Addition"    Value="30"      Path="../ClassEmpire/ClassColonizedStarSystem"/>
     </SimulationDescriptor>
     <!-- Law 2-->
