@@ -126,7 +126,6 @@
     </LawDefinition>
     <!-- Law 4 -->
     <LawDefinition Name="LawP01L04" SubCategory="LawPolitics01" ScoreProvider="IndustrialistLawEnacted" Duration="1">
-        <!-- TODO : ai gain for militaryshipstats (loss in this case) -->
         <Politics Name="Politics01"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 20),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.8*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
         <LawEffectSimulation>
@@ -140,7 +139,6 @@
         <SimulationDescriptorReference Name="LawUpkeepLevel4"/>
     </LawDefinition>
     <LawDefinition Name="LawP01L04Republic" SubCategory="LawPolitics01" ScoreProvider="IndustrialistLawEnacted" Duration="1">
-        <!-- TODO : ai gain for militaryshipstats (loss in this case) -->
         <Politics Name="Politics01"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 20),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.8*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
         <LawEffectSimulation>
@@ -154,21 +152,6 @@
         <SimulationDescriptorReference Name="LawUpkeepLevel4"/>
     </LawDefinition>
 
-
-
-    <!-- Venetians: Industrialist law-->
-    <LawDefinition Name="LawP01QuestVenetians05" SubCategory="LawPolitics01" ScoreProvider="IndustrialistLawEnacted" Duration="1" IsQuestRelated="true" >
-        <Politics Name="Politics01"/>
-        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 5),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.2*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
-        <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP01QuestVenetians05" />
-        </LawEffectSimulation>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics01">1</SupportPrerequisite>
-        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-        <PathPrerequisite           Inverted="false"    Flags="Prerequisite,Discard">../ClassEmpire/ClassQuests,CompletedQuestVenetians05</PathPrerequisite>
-        <SimulationDescriptorReference Name="LawPolitics01"/>
-        <SimulationDescriptorReference Name="LawUpkeepLevel1"/>
-    </LawDefinition>
 
 <!-- ################################################################ -->
 <!-- ####################   P02: SCIENTIST   ######################## -->
@@ -209,72 +192,61 @@
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel0"/>
     </LawDefinition>
-    <!-- "Expand Production Budget" - Increase production but lower growth and science -->
-    <LawDefinition Name="LawP02L02" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
+    <!-- Law 1 -->
+    <LawDefinition Name="LawP02L01" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 5),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.2*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
-        <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP02L02" />
-        </LawEffectSimulation>
-        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
-        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
-        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
-        <SimulationDescriptorReference Name="LawPolitics02"/>
-        <SimulationDescriptorReference Name="LawUpkeepLevel1"/>
-    </LawDefinition>
-
-    <LawDefinition Name="LawP02L02Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
-        <Politics Name="Politics02"/>
-        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 5),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.2*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
-        <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP02L02Republic" />
-        </LawEffectSimulation>
-        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
-        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
-        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
-        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
-        <SimulationDescriptorReference Name="LawPolitics02"/>
-        <SimulationDescriptorReference Name="LawUpkeepLevel1"/>
-    </LawDefinition>
-
-    <LawDefinition Name="LawP02L01" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" >
-        <!-- AI Gain: Need explo gain -->
-        <Politics Name="Politics02"/>
-        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 10),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.4*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
         <LawEffectSimulation>
             <SimulationDescriptorReference Name="LawEffectP02L01" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
-        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">3</PoliticsExperiencePrerequisite>
-        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
+        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
+        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics02"/>
-        <SimulationDescriptorReference Name="LawUpkeepLevel2"/>
+        <SimulationDescriptorReference Name="LawUpkeepLevel1"/>
     </LawDefinition>
-
-    <LawDefinition Name="LawP02L01Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" >
-        <!-- AI Gain: Need explo gain -->
+    <LawDefinition Name="LawP02L01Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
-        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 10),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.4*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
+        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 5),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.2*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
         <LawEffectSimulation>
             <SimulationDescriptorReference Name="LawEffectP02L01Republic" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">0</PoliticsExperiencePrerequisite>
+        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 1 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="LawPolitics02"/>
+        <SimulationDescriptorReference Name="LawUpkeepLevel1"/>
+    </LawDefinition>
+    <!-- Law 2 -->
+    <LawDefinition Name="LawP02L02" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" >
+        <Politics Name="Politics02"/>
+        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 10),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.4*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
+        <LawEffectSimulation>
+            <SimulationDescriptorReference Name="LawEffectP02L02" />
+        </LawEffectSimulation>
+        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
+        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">3</PoliticsExperiencePrerequisite>
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel2"/>
     </LawDefinition>
-
-
-
-    <!-- "Centralize Efforts" - Reduce Building Cost, but increase outpost growth -->
+    <LawDefinition Name="LawP02L02Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" >
+        <Politics Name="Politics02"/>
+        <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 10),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.4*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
+        <LawEffectSimulation>
+            <SimulationDescriptorReference Name="LawEffectP02L02Republic" />
+        </LawEffectSimulation>
+        <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
+        <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
+        <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">3</PoliticsExperiencePrerequisite>
+        <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 2 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
+        <SimulationDescriptorReference Name="LawPolitics02"/>
+        <SimulationDescriptorReference Name="LawUpkeepLevel2"/>
+    </LawDefinition>
+    <!-- Law 3 -->
     <LawDefinition Name="LawP02L03" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 15),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.6*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
@@ -284,13 +256,10 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
-
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 3 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel3"/>
     </LawDefinition>
-
     <LawDefinition Name="LawP02L03Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 15),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.6*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
@@ -300,14 +269,11 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">9</PoliticsExperiencePrerequisite>
-
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 3 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
-
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel3"/>
     </LawDefinition>
-
-    
+    <!-- Law 4 -->
     <LawDefinition Name="LawP02L04" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 20),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.8*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
@@ -317,12 +283,10 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">15</PoliticsExperiencePrerequisite>
-
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel4"/>
     </LawDefinition>
-
     <LawDefinition Name="LawP02L04Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1">
         <Politics Name="Politics02"/>
         <CustomCost ResourceName="EmpireEmpirePoint">Max(Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * 20),Round(Property(Context,@'../ClassEmpire/ClassSenate',LawActivationCostModifier) * (.8*Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint))))</CustomCost>
@@ -332,7 +296,6 @@
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
         <SupportPrerequisite Flags="Prerequisite,Disable,Support" Politics="Politics02">1</SupportPrerequisite>
         <PoliticsExperiencePrerequisite Flags="Prerequisite,Disable,Experience" Politics="Politics02">15</PoliticsExperiencePrerequisite>
-
         <InterpreterPrerequisite Flags="Prerequisite,AdditionalUpkeep">(Property(Context,@'../ClassEmpire',NetEmpireEmpirePoint) + Property(Context,@'../ClassEmpire',EmpireEmpirePointStock)) ge 4 * Property(Context, @'../ClassEmpire', Population)</InterpreterPrerequisite>
         <SimulationDescriptorReference Name="LawPolitics02"/>
         <SimulationDescriptorReference Name="LawUpkeepLevel4"/>
