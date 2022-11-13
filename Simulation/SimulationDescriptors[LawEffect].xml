@@ -43,13 +43,13 @@
     </SimulationDescriptor>
      <!-- Law 3-->
     <SimulationDescriptor Name="LawEffectP01L03" Type="LawEffect">
-        <Modifier       TargetProperty="PlanetRawIndustry"                  Operation="Addition"    Value="6"   Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
-        <Modifier TargetProperty="PlanetIndustry"                           Operation="Percent"     Value="0.3" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier       TargetProperty="PlanetRawIndustry"                  Operation="Addition"    Value="5"   Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <Modifier TargetProperty="PlanetIndustry"                           Operation="Percent"     Value="0.25" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
         <Modifier TargetProperty="DemocracyLawsDiversityHasIndustrialist"   Operation="Addition"    Value="1"   Path="../ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="LawEffectP01L03Republic" Type="LawEffect">
-        <Modifier       TargetProperty="PlanetRawIndustry"                  Operation="Addition"    Value="8"   Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
-        <Modifier TargetProperty="PlanetIndustry"                           Operation="Percent"     Value="0.4" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier       TargetProperty="PlanetRawIndustry"                  Operation="Addition"    Value="6"   Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <Modifier TargetProperty="PlanetIndustry"                           Operation="Percent"     Value="0.3" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
     </SimulationDescriptor>
     <!-- Law 4-->
     <SimulationDescriptor Name="LawEffectP01L04" Type="LawEffect">
