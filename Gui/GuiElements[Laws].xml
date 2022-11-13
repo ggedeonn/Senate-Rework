@@ -195,24 +195,6 @@
         <ShortTitle>%LawP02L03ShortTitle</ShortTitle>
     </LawGuiElement>
 
-    <LawGuiElement Name="LawP02L03Vaulters">
-        <Title>%LawP02L03VaultersTitle</Title>
-        <Description>%LawP02L03VaultersDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP02L03Small" />
-        </Icons>
-        <ShortTitle>%LawP02L03VaultersShortTitle</ShortTitle>
-    </LawGuiElement>
-
-    <LawGuiElement Name="LawP02L03RepublicVaulters">
-        <Title>%LawP02L03VaultersTitle</Title>
-        <Description>%LawP02L03VaultersDescription</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP02L03Small" />
-        </Icons>
-        <ShortTitle>%LawP02L03VaultersShortTitle</ShortTitle>
-    </LawGuiElement>
-
     <LawGuiElement Name="LawP02L04">
         <Title>%LawP02L04Title</Title>
         <Description>%LawP02L04Description</Description>
@@ -466,22 +448,6 @@
         </Icons>
         <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
     </LawGuiElement>
-    <LawGuiElement Name="LawP04L01MajorHisshos">
-        <Title>%LawP04L01Title</Title>
-        <Description>%LawP04L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
-        </Icons>
-        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
-    </LawGuiElement>
-    <LawGuiElement Name="LawP04L01MajorHisshosRepublic">
-       <Title>%LawP04L01Title</Title>
-        <Description>%LawP04L01Description</Description>
-        <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
-        </Icons>
-        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
-    </LawGuiElement>
     <LawGuiElement Name="LawP04L01UmbralChoir">
         <Title>%LawP04L02UmbralChoirTitle</Title>
         <Description>%LawP04L02UmbralChoirDescription</Description>
@@ -498,21 +464,39 @@
         </Icons>
         <ShortTitle>%LawP04L02UmbralChoirShortTitle</ShortTitle>
     </LawGuiElement>
+    <!-- Unfallen -->
     <LawGuiElement Name="LawP04L01NoOutposts">
-        <Title>%LawP04L01Title</Title>
-        <Description>%LawP04L01Description</Description>
+        <Title>%LawP00UnfallenTitle</Title>
+        <Description>%LawP00UnfallenDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionBasryxo" />
         </Icons>
-        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP00UnfallenShortTitle</ShortTitle>
     </LawGuiElement>
     <LawGuiElement Name="LawP04L01NoOutpostsRepublic">
-        <Title>%LawP04L01Title</Title>
-        <Description>%LawP04L01Description</Description>
+        <Title>%LawP00UnfallenTitle</Title>
+        <Description>%LawP00UnfallenDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionBasryxo" />
         </Icons>
-        <ShortTitle>%LawP04L01ShortTitle</ShortTitle>
+        <ShortTitle>%LawP00UnfallenShortTitle</ShortTitle>
+    </LawGuiElement>
+    <!-- Vaulters -->
+    <LawGuiElement Name="LawP04L01Vaulters">
+        <Title>%LawP02L03VaultersTitle</Title>
+        <Description>%LawP02L03VaultersDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionBenthys" />
+        </Icons>
+        <ShortTitle>%LawP02L03VaultersShortTitle</ShortTitle>
+    </LawGuiElement>
+    <LawGuiElement Name="LawP04L01RepublicVaulters">
+       <Title>%LawP02L03VaultersTitle</Title>
+        <Description>%LawP02L03VaultersDescription</Description>
+        <Icons>
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP00PopulationCollectionBenthys" />
+        </Icons>
+        <ShortTitle>%LawP02L03VaultersShortTitle</ShortTitle>
     </LawGuiElement>
     <!-- Law 2 -->
     <LawGuiElement Name="LawP04L02">
@@ -552,7 +536,7 @@
         <Title>%LawP01L01UmbralChoirTitle</Title>
         <Description>%LawP01L01UmbralChoirDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
         <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
     </LawGuiElement>
@@ -560,7 +544,7 @@
         <Title>%LawP01L01UmbralChoirTitle</Title>
         <Description>%LawP01L01UmbralChoirDescription</Description>
         <Icons>
-            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP01L01Small" />
+            <Icon Size="Small" Path="Bitmaps/Atlased/Laws/LawP04L05Small" />
         </Icons>
         <ShortTitle>%LawP01L01UmbralChoirShortTitle</ShortTitle>
     </LawGuiElement>

@@ -39,9 +39,10 @@
   <LocalizationPair Name="%LawP01L07ShortTitle">СКУП</LocalizationPair>
   <LocalizationPair Name="%LawP01L07Description">Сенат предполагает осуществить масштабные организационные преобразования, которые в случае успеха резко сократят по всей империи непроизводительные издержки в промышленности. Ожидается, что через несколько лет эти меры по рационализации управления сократят документооборот в средней корпорации как максимум на сорок пять процентов.</LocalizationPair>
   
-  
-  
-
+  <LocalizationPair Name="%LawEffectP01L01TooltipOverride">-7.5% [industryColored] стоимость улучшений системы за уровень системы</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L01RepublicTooltipOverride">-10% [industryColored] стоимость улучшений системы за уровень системы</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP01L02RepublicTooltipOverride">+0.75 Генерирование ресурсов на Залежи стратегических ресурсов</LocalizationPair>
+  <LocalizationPair Name="%%LawEffectP01L00Republic">20% промышленности для постройки системных улучшений в конце преобразуется в прах</LocalizationPair>
 
 <!-- ################################################################ -->
 <!-- ####################   P02: SCIENTIST   ######################## -->
@@ -119,6 +120,11 @@
   <LocalizationPair Name="%LawP04L01Title">Поправка о колонизационных правах и временных технологиях</LocalizationPair>
   <LocalizationPair Name="%LawP04L01ShortTitle">Невзгоды не беда</LocalizationPair>
   <LocalizationPair Name="%LawP04L01Description">Население, сформировавшееся в политической культуре с экологическими приоритетами, весьма охотно поддерживает законотворчество, снимающее ограничения на экспатриацию в частично терраформированные миры. В практическом плане это означает, что колонисты учатся приспосабливаться к местным условиям, применяя различные самодельные конструкции и технологии, основанные на интуитивном проникновении в тайны местной природы, увеличивая скорость освоения планет. </LocalizationPair>
+  <LocalizationPair Name="%LawP00UnfallenTitle">Указ об общественном воздействии Сердца</LocalizationPair>
+  <LocalizationPair Name="%LawP00UnfallenShortTitle">Гармонический рост</LocalizationPair>
+  <LocalizationPair Name="%LawP00UnfallenDescription">Каждый новый мир, попадающие под влияние Сердца, отражается на Непадших, вызывая временное благоволение и чувство морального удовлетворения на всё их общество. А этот законодательный акт помогает формализовать и поощрить оптимистические настроения и среди других народов империи. Помимо установления официального периода национального празднества данная норма снижениет барьеры на пути мирной экспансии.</LocalizationPair> 
+  
+  
   <!-- Law 2-->
   <LocalizationPair Name="%LawP04L02Title">Постановление об ответственной эксплуатации природных ресурсов </LocalizationPair>
   <LocalizationPair Name="%LawP04L02ShortTitle">Моё драгоценное предписание</LocalizationPair>
@@ -129,8 +135,8 @@
   <LocalizationPair Name="%LawP04L03Description">Создание первых поселений при колонизации планет с суровыми условия - это лишь малая часть трудностей, основной же проблемой является создание жилых кварталов и комфортных условий жизни, с чем и призван бороться законопроект "Жизнь в симбиозе". Суть его состоит в ряде мер, направленных на создание адаптируемых экологических жилых пространств, специализироывнных под конкретные условия планеты и на максимально возможную рециркуляцию мусора для улучшения экологии.</LocalizationPair>
   <!-- Law 4-->
   <LocalizationPair Name="%LawP04L04Title">Программа максимального увеличения объемов производства</LocalizationPair>
-  <LocalizationPair Name="%LawP04L04ShortTitle">Сеять и жать</LocalizationPair>
-  <LocalizationPair Name="%LawP04L04Description">В целях увеличения объемов добычи по всей империи, принимаются меры по адаптации производств под условия планет и обучение рабочих взаимодействию с окружающей средой. Благодоря чему можно добиться существенного экономического роста (причём без существенного влияния на экологическую среду планеты) за счет внедрения нескольких циклов сбора урожая, промышленного планирования в суровых условиях и непрерывного изменения расположения зон засева, а также проведения масштабных обучающих программ и семинаров.</LocalizationPair>
+  <LocalizationPair Name="%LawP04L04ShortTitle">Сеять и строить</LocalizationPair>
+  <LocalizationPair Name="%LawP04L04Description">В целях увеличения объемов добычи по всей империи, причём без существенного влияния на экологическую среду планеты, принимаются меры по адаптации производств под условия планет и обучение рабочих взаимодействию с окружающей средой. Благодоря чему можно добиться существенного экономического роста за счёт внедрения нескольких циклов сбора урожая, промышленного планирования в суровых условиях и непрерывного изменения расположения зон засева, а также проведения масштабных обучающих программ и семинаров.</LocalizationPair>
 
 
   <!-- Law 5-->
@@ -143,10 +149,18 @@
   <LocalizationPair Name="%LawP04L07Description">Оказавшись перед перспективой сокращения бюджета, команда юных энтузиастов охраны природы, возглавляемая неким пылким госслужащим, родила гениальную идею, чреватую масштабным пиаром: присвоить роскошным межгалактическим курортам статус национальных парков, открыв их для широкой публики. С финансовой точки зрения мера убыточная, зато наличие таких зон отдыха способно поднять моральный дух граждан, обитающих на задворках империи. </LocalizationPair>
   
   
-  
-  
-  
+  <LocalizationPair Name="%LawEffecttP04L02RepublicTooltipOverride">+0.15 [foodColored] за [industryColored] на Системы</LocalizationPair>
 
+   <LocalizationPair Name="%LawEffecttP04L03TooltipOverride">-40% штраф [happinessColored] за [OverPopulation]
+-40% штраф [happinessColored] от климатических типов планет</LocalizationPair>
+  <LocalizationPair Name="%LawEffecttP04L03RepublicTooltipOverride">-50% штраф [happinessColored] за [OverPopulation]
+-50% штраф [happinessColored] от климатических типов планет</LocalizationPair>
+
+  <LocalizationPair Name="%LawEffecttP04L04TooltipOverride">+40% [FIDS] к изначальным значениям планеты</LocalizationPair>
+  <LocalizationPair Name="%LawEffecttP04L04RepublicTooltipOverride">+50% [FIDS] к изначальным значениям планеты</LocalizationPair>
+
+  <LocalizationPair Name="%LawEffectP04L01NoOutpostsTooltipOverride">+30 [happinessColored] и -30% [industryColored] для строительства колонизационных и исследовательских кораблей на 3/5 [turn] при приобретении новой колонии</LocalizationPair>
+  <LocalizationPair Name="%LawEffectP04L01NoOutpostsRepublicTooltipOverride">+40 [happinessColored] и -40% [industryColored] для строительства колонизационных и исследовательских кораблей на 3/5 [turn] при приобретении новой колонии</LocalizationPair>
 
 
 <!-- ################################################################ -->
