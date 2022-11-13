@@ -73,14 +73,14 @@
 <!-- ####################   P02: SCIENTIST   ######################## -->
 <!-- ################################################################ -->
     <!-- Super Law-->
-    <SimulationDescriptor Name="LawEffectP02L00" Type="LawEffect">
+    <SimulationDescriptor Name="LawEffectP02L00_REWORK" Type="LawEffect">
         <Modifier TargetProperty="TechnologyCostReduction"              Operation="Addition"    Value="-0.10" Path="../ClassEmpire/ClassResearch"  />
         <Modifier TargetProperty="DemocracyLawsDiversityHasScientist"   Operation="Addition"    Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
-    <SimulationDescriptor Name="LawEffectP02L00Republic" Type="LawEffect">
+    <SimulationDescriptor Name="LawEffectP02L00Republic_REWORK" Type="LawEffect">
         <Modifier TargetProperty="TechnologyCostReduction"              Operation="Addition"    Value="-0.125" Path="../ClassEmpire/ClassResearch" />
     </SimulationDescriptor>
-    <SimulationDescriptor Name="LawEffectP02L00Dictatorship" Type="LawEffect">
+    <SimulationDescriptor Name="LawEffectP02L00Dictatorship_REWORK" Type="LawEffect">
         <Modifier TargetProperty="TechnologyCostReduction"              Operation="Addition"    Value="-0.15" Path="../ClassEmpire/ClassResearch"  />
     </SimulationDescriptor>
     <!-- Law 1-->

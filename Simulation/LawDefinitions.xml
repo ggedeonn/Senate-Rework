@@ -159,7 +159,7 @@
     <LawDefinition Name="LawP02L00" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" Forced="true" >
         <Politics Name="Politics02"/>
         <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP02L00" />
+            <SimulationDescriptorReference Name="LawEffectP02L00_REWORK" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,PrimeSenator">ClassSenate/ClassSenator,Politics02,PrimeSenator</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,!GovernmentRepublic,!GovernmentDictatorshipCommon</PathPrerequisite>
@@ -171,7 +171,7 @@
     <LawDefinition Name="LawP02L00Republic" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" Forced="true" >
         <Politics Name="Politics02"/>
         <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP02L00Republic" />
+            <SimulationDescriptorReference Name="LawEffectP02L00Republic_REWORK" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,PrimeSenator">ClassSenate/ClassSenator,Politics02,PrimeSenator</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentRepublic</PathPrerequisite>
@@ -183,7 +183,7 @@
     <LawDefinition Name="LawP02L00Dictatorship" SubCategory="LawPolitics02" ScoreProvider="ScientistLawEnacted" Duration="1" Forced="true" >
         <Politics Name="Politics02"/>
         <LawEffectSimulation>
-            <SimulationDescriptorReference Name="LawEffectP02L00Dictatorship" />
+            <SimulationDescriptorReference Name="LawEffectP02L00Dictatorship_REWORK" />
         </LawEffectSimulation>
         <PathPrerequisite Flags="Prerequisite,Discard,PrimeSenator">ClassSenate/ClassSenator,Politics02,PrimeSenator</PathPrerequisite>
         <PathPrerequisite Flags="Prerequisite,Discard,Government">ClassSenate,GovernmentDictatorshipCommon</PathPrerequisite>
