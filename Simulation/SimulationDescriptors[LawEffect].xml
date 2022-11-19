@@ -108,8 +108,8 @@
         <Modifier TargetProperty="DemocracyLawsDiversityHasScientist" Operation="Addition" Value="1" Path="../ClassEmpire" TooltipHidden="true"/>
     </SimulationDescriptor>
     <SimulationDescriptor Name="LawEffectP02L03Republic" Type="LawEffect">
-        <Modifier   TargetProperty="PlanetRawScience"   Operation="Addition"    Value="6" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
-        <Modifier TargetProperty="PlanetScience"        Operation="Percent"     Value="0.3"     Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
+        <Modifier   TargetProperty="PlanetRawScience"   Operation="Addition"    Value="5" Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet" />
+        <Modifier TargetProperty="PlanetScience"        Operation="Percent"     Value="0.25"     Path="../ClassEmpire/ClassColonizedStarSystem/ClassColonizedPlanet"/>
     </SimulationDescriptor>
     <!-- Law 4-->
     <SimulationDescriptor Name="LawEffectP02L04" Type="LawEffect">
